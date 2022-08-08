@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container-grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: minmax(200px, 650px) auto 70px;
+	grid-template-areas: "image image image"
+						 "main main main"
+						 "footer footer footer";
+	
+}
+
+
+
+.header {
+	
+	background: rgba(0, 0, 0, 0.7);
+ 	backdrop-filter: blur(1px);
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 10px;
+	width: 50%;
+	margin: auto auto;
+	
+}
+
+
+
+.menu{
+	
+	
+	display: flex;
+}
+
+
+.menu li  {
+	list-style: none;
+}
+
+.menu li a {
+	display: inline-block;
+	color:white;
+	text-decoration: none;
+	padding:10px 20px;
+	transition: ease 1s all;
+}
+
+.menu li a:hover {
+	transform: scale(1.1,1.1);
+}
+
+
+.carousel{
+	grid-area:image;
+	
+}
+
+.carousel-image{
+	max-height: 650px;
+}
+
+.d-md-block {
+	width: -50%;
+	height: auto;
+	background: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(1px);
+  }
+
+main{
+	grid-area: main;
+}
+
+
+
+main > .container{
+	margin-top: 100px;
+}
+
+
+
+
+
+.container-dollar{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card{
+	min-width: 200px;
+	backdrop-filter: blur(10px);
+}
+
+
+.titulo-simulador{
+	margin-top:100px;
+}
+
+
+.title{
+	color:rgb(88, 86, 86)
+}
+
+
+
+
+footer{
+	grid-area: footer;
+	background: #056dae;
+	color:white;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
