@@ -25,7 +25,7 @@ fetch("https://criptoya.com/api/dolar")
 .then(response => response.json())
 .then(({oficial, solidario, blue}) => {		
     divDollar.innerHTML=`
-    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
         <div class="card-header">Oficial </div>
         <div class="card-body">
             <h4 class="card-title">$${oficial}</h4>
@@ -33,7 +33,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
         <div class="card-header">Solidario </div>
         <div class="card-body">
             <h4 class="card-title">$${solidario}</h4>
@@ -41,7 +41,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
         <div class="card-header">Blue </div>
         <div class="card-body">
             <h4 class="card-title">$${blue}</h4>
@@ -59,7 +59,7 @@ fetch("https://criptoya.com/api/dolar")
   .then(response => response.json())
   .then(({oficial, solidario, blue}) => {		
       divDollar.innerHTML=`
-      <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+      <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
         <div class="card-header">Oficial </div>
         <div class="card-body">
             <h4 class="card-title">$${oficial}</h4>
@@ -67,7 +67,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
         <div class="card-header">Solidario </div>
         <div class="card-body">
             <h4 class="card-title">$${solidario}</h4>
@@ -75,7 +75,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
         <div class="card-header">Blue </div>
         <div class="card-body">
             <h4 class="card-title">$${blue}</h4>

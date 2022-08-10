@@ -11,9 +11,11 @@ body{
 .container-grid{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: minmax(200px, 650px) auto 70px;
+	grid-template-rows: minmax(200px, 650px) auto 500px 500px 70px;
 	grid-template-areas: "image image image"
 						 "main main main"
+						 "reviews reviews reviews"
+						 "form form form"
 						 "footer footer footer";
 	
 }
@@ -21,7 +23,6 @@ body{
 
 
 .header {
-	
 	background: rgba(0, 0, 0, 0.7);
  	backdrop-filter: blur(1px);
 	display: flex;
@@ -32,34 +33,16 @@ body{
 	top: 10px;
 	width: 50%;
 	margin: auto auto;
-	
 }
 
 
-
-.menu{
-	
-	
-	display: flex;
-}
-
-
-.menu li  {
-	list-style: none;
-}
-
-.menu li a {
-	display: inline-block;
-	color:white;
-	text-decoration: none;
-	padding:10px 20px;
+.menu a {
 	transition: ease 1s all;
 }
 
-.menu li a:hover {
+.menu a:hover {
 	transform: scale(1.1,1.1);
 }
-
 
 .carousel{
 	grid-area:image;
@@ -77,18 +60,16 @@ body{
 	backdrop-filter: blur(1px);
   }
 
+
+
+
 main{
 	grid-area: main;
 }
 
-
-
 main > .container{
 	margin-top: 100px;
 }
-
-
-
 
 
 .container-dollar{
@@ -97,11 +78,9 @@ main > .container{
 }
 
 .card{
-	min-width: 200px;
-	backdrop-filter: blur(10px);
+	min-width: 300px;
+	min-height: 200px;
 }
-
-
 .titulo-simulador{
 	margin-top:100px;
 }
@@ -110,6 +89,62 @@ main > .container{
 .title{
 	color:rgb(88, 86, 86)
 }
+
+
+
+
+.container-reviews{
+	grid-area:reviews;
+	width: 100%;
+	height: 500px;
+	background-color: #056dae;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.container-reviews > .container{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.image-review{
+	width: 200px;
+	margin: 20px auto;
+}
+
+
+.title-reviews{
+	font-weight: bold;
+	color:white;
+	padding: 50px 20px;
+}
+
+.div-form{
+	grid-area: form;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+form{
+	width: 50%;
+}
+
+.form-image{
+	width: 50%;
+}
+
+.form-image img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 
