@@ -25,7 +25,8 @@ fetch("https://criptoya.com/api/dolar")
 .then(response => response.json())
 .then(({oficial, solidario, blue}) => {		
     divDollar.innerHTML=`
-    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    
+    <div class="card text-white color-card mb-3" >
         <div class="card-header">Oficial </div>
         <div class="card-body">
             <h4 class="card-title">$${oficial}</h4>
@@ -33,7 +34,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card text-white color-card mb-3" >
         <div class="card-header">Solidario </div>
         <div class="card-body">
             <h4 class="card-title">$${solidario}</h4>
@@ -41,7 +42,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card text-white color-card mb-3" >
         <div class="card-header">Blue </div>
         <div class="card-body">
             <h4 class="card-title">$${blue}</h4>
@@ -59,7 +60,7 @@ fetch("https://criptoya.com/api/dolar")
   .then(response => response.json())
   .then(({oficial, solidario, blue}) => {		
       divDollar.innerHTML=`
-      <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+      <div class="card text-white color-card mb-3" >
         <div class="card-header">Oficial </div>
         <div class="card-body">
             <h4 class="card-title">$${oficial}</h4>
@@ -67,7 +68,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card text-white color-card mb-3" >
         <div class="card-header">Solidario </div>
         <div class="card-body">
             <h4 class="card-title">$${solidario}</h4>
@@ -75,7 +76,7 @@ fetch("https://criptoya.com/api/dolar")
         </div>
     </div>
 
-    <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card text-white color-card mb-3" >
         <div class="card-header">Blue </div>
         <div class="card-body">
             <h4 class="card-title">$${blue}</h4>
@@ -157,6 +158,7 @@ function insertarDatos(){
             title: 'Oops...',
             text: 'Los datos ingresados no son correctos, intentelo nuevamente',
             confirmButtonColor: '#0d6efd',
+            confirmButtonText: 'Aceptar'
           })
 }
 }
@@ -195,6 +197,23 @@ botonTareas.addEventListener('click', () =>{
      
      })
 })
+
+
+let contacForm = document.getElementById("contact-form")
+
+contacForm.addEventListener('submit', () =>{
+    event.preventDefault()
+    Swal.fire({
+        icon: 'success',
+        title: 'Tu correo ha sido enviado',
+        text: 'En breve uno de nuestros agentes te contactará',
+        confirmButtonColor: '#0d6efd',
+        confirmButtonText: 'Aceptar'
+      })
+
+      contacForm.reset()
+})
+
 
 
 

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+ 
  </head>
 
 
@@ -31,21 +32,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/carousel/image1.jpg" class="d-block w-100 carousel-image" alt="...">
+          <img src="images/carousel/image1.jpg" class="d-block w-100 carousel-image" alt="Prestamos con el minimo de interes">
           <div class="carousel-caption d-none d-md-block">
             <h5>Prestamos con el minimo de interes</h5>
             <p>En Presta Facil te prestamos con el interes mas bajo del mercado</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/carousel/image2.jpg" class="d-block w-100 carousel-image" alt="...">
+          <img src="images/carousel/image2.jpg" class="d-block w-100 carousel-image" alt="Plazos accesibles">
           <div class="carousel-caption d-none d-md-block">
             <h5>Plazos accesibles</h5>
             <p>Te damos de 1 a 12 meses para saldar tu prestamo</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/carousel/image3.jpg" class="d-block w-100 carousel-image" alt="...">
+          <img src="images/carousel/image3.jpg" class="d-block w-100 carousel-image" alt="Facil, seguro y rapido">
           <div class="carousel-caption d-none d-md-block">
             <h5>Facil, seguro y rapido</h5>
             <p>Tu prestamo está a solo unos clics de distancia</p>
@@ -61,10 +62,10 @@
         <span class="visually-hidden">Next</span>
       </button>
 
-      
+      <!--MENU PRINCIPAL-->
       <nav class="navbar navbar-expand-lg header menu">
         <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Inicio</a>
+          <a class="navbar-brand text-light" href="index.html">Inicio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -77,70 +78,64 @@
                 <a class="nav-link text-light" href="#reviews">Testimonios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contacto</a>
+                <a class="nav-link text-light" href="#form">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-      
     </div>
 
 
 
 
     <main>
+      <!--PRECIO DEL DOLAR-->
       <div class="container">
+        <h2 class="form-title">Precio del dolar</h2>
+        <div class="container container-dollar" id="divDollar"></div>
+         <div class="separator"></div>
 
-        
-        <div class="container container-dollar" id="divDollar">
-        </div>
-          
-
+         <!--SIMULADOR DE PRESTAMOS-->
         <div class="titulo-simulador">
-          <h1 class="title">Cotizar prestamo</h1><a name="cotizador"></a>
-          <p>Ingrese la cantidad deseada (recuerde que el rango es de 1000$ a 50000$ pesos) en un rango de 1 a 12 meses</p>
+          <a name="cotizador"></a>
+          <h1 class="title">Cotizar prestamo</h1>
+          <p>Ingrese la cantidad deseada (recuerde que el rango del prestamo es de 1000$ a 50,000$ pesos) a pagar en un plazo de 1 a 12 meses</p>
         </div>
 
-        <form id="idForm" >
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Monto</label>
-            <input type="text" class="form-control w-25" id="idMonto" placeholder="Ingrese la cantidad deseada">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Meses</label>
-            <input type="text" class="form-control w-25" id="idMeses" placeholder="Ingrese el plazo a pagar">
-          </div>
-            
-          <button type="submit" class="btn btn-primary">Cotizar</button>
-        </form>
-      </div>
+        <!--FORMULARIO DEL SIMULADOR-->
+        <div class="container"> 
+          <form class="contact-form-loan" id="idForm">
+            <div class="field-container-form">
+              <i class="fa-solid fa-coins"></i>
+              <input type="text" required id="idMonto" placeholder="Ingrese la cantidad deseada">
+            </div>
+            <div class="field-container-form">
+              <i class="fa-solid fa-calendar-days"></i>
+              <input type="text" id="idMeses" placeholder="Ingrese el plazo a pagar">
+            </div>
+            <input type="submit" class="" value="Cotizar">
+          </form>
+        </div>
         
-
-      <div class="container" id="resultado">
-      </div>
-
-      
-      <div class="container">
-        <br>
-        <button id="btn-tareas" class="btn btn-primary">Mostrar cotizaciones</button>
-      </div>
-
-      <br>
-
-
-      <div class="container" id="divprestamos">
+        <!--CONTENEDOR CON EL RESULTADO DE LA COTIZACION-->
+        <div class="container" id="resultado"></div>
+        
+        <div class="container">
+          <br>
+          <button id="btn-tareas" class="btn btn-success">Mostrar cotizaciones</button>
+        </div>
+       <br />
+       <!--CONTENEDOR PARA EL HISTORIAL DE COTIZACIONES-->
+        <div class="container" id="divprestamos"></div>
       </div>
     </main>
 
 
 
-
+    <!--CONTENEDOR EXPERIENCIAS DE LOS CLIENTES-->
     <div class="container-reviews"> <a name="reviews"></a>
-      
-        <h2 class="title-reviews">La atencion al cliente es nuestra prioridad</h2>
+      <h2 class="title-reviews">La atencion al cliente es nuestra prioridad</h2>
         <div class="container">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -175,35 +170,59 @@
             <img src="images/stars.png" class="image-review">
           </div>
         </div>
-      
-
     </div>
 
+    <!--CONTENEDOR FORMULARIO DE CONTACTO-->
+    <div class="container divform"> <a name="form"></a>
+      <h3 class="form-title">Contactenos</h3>
+      <div class="subcontainer">
+       
+        <form class="contact-form" id="contact-form">
+          <div class="field-container">
+            <i class="fa-solid fa-user"></i> 
+            <input type="text" name="nombre" required placeholder="Nombre">
+          </div>
 
-    <div class="container form">
-      <form>
-        <input type="text" name="nombre" required placeholder="Nombre">
-        <input type="text" name="apellido" required placeholder="Apellido">
-        <input type="email" name="email" required placeholder="Correo electronico">
-        <input type="tel" name="telefono" placeholder="No. de telefono">
-        <input type="text" name="asunto" required placeholder="Escriba su mensaje">
-        <button type="submit">Enviar</button>
-      </form>
+          <div class="field-container">
+            <i class="fa-solid fa-user"></i> 
+            <input type="text" name="apellido" required placeholder="Apellido">
+          </div>
 
-      <div class="form-image">
-        <img src="images/trabajadores.jpg">
+          <div class="field-container">
+            <i class="fa-solid fa-envelope"></i> 
+            <input type="email" name="email" required placeholder="Correo electronico">
+          </div>
+          
+          <div class="field-container">
+            <i class="fa-solid fa-phone"></i> 
+            <input type="tel" name="telefono" placeholder="No. de telefono">
+          </div>
+
+          <div class="field-container">
+            <i class="fa-solid fa-file-pen"></i> 
+            <textarea name="mensaje" required placeholder="Escriba su mensaje"></textarea>
+          </div>
+
+          <input type="submit" value="Enviar" id="btnform">
+        </form>
+
+        <div class="form-image">
+          <img src="images/email.png">
+        </div>
       </div>
+
     </div>
 
 
     <footer>
-      <p>Todos los derechos reservados</p>
+      <p>Presta facil 2022 - Todos los derechos reservados</p>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8b871e522d.js" crossorigin="anonymous"></script>
 
   </div>
 </body>
