@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/styles/css/destination.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -32,21 +32,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/carousel/image1.jpg" class="d-block w-100 carousel-image" alt="Prestamos con el minimo de interes">
+          <img src="assets/images/carousel/image1.jpg" class="d-block w-100 carousel-image" alt="Prestamos con el minimo de interes">
           <div class="carousel-caption d-none d-md-block">
             <h5>Prestamos con el minimo de interes</h5>
             <p>En Presta Facil te prestamos con el interes mas bajo del mercado</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/carousel/image2.jpg" class="d-block w-100 carousel-image" alt="Plazos accesibles">
+          <img src="assets/images/carousel/image2.jpg" class="d-block w-100 carousel-image" alt="Plazos accesibles">
           <div class="carousel-caption d-none d-md-block">
             <h5>Plazos accesibles</h5>
             <p>Te damos de 1 a 12 meses para saldar tu prestamo</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/carousel/image3.jpg" class="d-block w-100 carousel-image" alt="Facil, seguro y rapido">
+          <img src="assets/images/carousel/image3.jpg" class="d-block w-100 carousel-image" alt="Facil, seguro y rapido">
           <div class="carousel-caption d-none d-md-block">
             <h5>Facil, seguro y rapido</h5>
             <p>Tu prestamo está a solo unos clics de distancia</p>
@@ -97,7 +97,7 @@
          <div class="separator"></div>
 
          <!--SIMULADOR DE PRESTAMOS-->
-        <div class="titulo-simulador">
+        <div class="titulo-simulador container">
           <a name="cotizador"></a>
           <h1 class="title">Cotizar prestamo</h1>
           <p>Ingrese la cantidad deseada (recuerde que el rango del prestamo es de 1000$ a 50,000$ pesos) a pagar en un plazo de 1 a 12 meses</p>
@@ -106,10 +106,12 @@
         <!--FORMULARIO DEL SIMULADOR-->
         <div class="container"> 
           <form class="contact-form-loan" id="idForm">
+            <label for="idMonto"><strong>Cantidad deseada</strong></label>
             <div class="field-container-form">
               <i class="fa-solid fa-coins"></i>
               <input type="text" required id="idMonto" placeholder="Ingrese la cantidad deseada">
             </div>
+            <label for="idMeses"><strong>Plazo de pago</strong></label>
             <div class="field-container-form">
               <i class="fa-solid fa-calendar-days"></i>
               <input type="text" id="idMeses" placeholder="Ingrese el plazo a pagar">
@@ -142,7 +144,7 @@
               <h5 class="card-title">Juan Garcia</h5>
               <p class="card-text">Mi experiencia con Presta Facil ha sido muy buena, 100% recomendados</p>
             </div>
-            <img src="images/stars.png" class="image-review">
+            <img src="assets/images/stars.png" class="image-review">
           </div>
 
           <div class="card" style="width: 18rem;">
@@ -150,7 +152,7 @@
               <h5 class="card-title">Roberto Santos</h5>
               <p class="card-text">Me prestaron dinero al momento y con un interes muy bajo</p>
             </div>
-            <img src="images/stars.png" class="image-review">
+            <img src="assets/images/stars.png" class="image-review">
           </div>
 
           <div class="card" style="width: 18rem;">
@@ -158,7 +160,7 @@
               <h5 class="card-title">Andres Rodriguez</h5>
               <p class="card-text">Obtener el prestamo fue mas facil de lo que imagine</p>
             </div>
-            <img src="images/stars.png" class="image-review">
+            <img src="assets/images/stars.png" class="image-review">
           </div>
 
           <div class="card" style="width: 18rem;">
@@ -167,7 +169,7 @@
               <p class="card-text">Pagar el prestamo fue realmente facil con los plazos y el bajo interes que manejan</p>
               
             </div>
-            <img src="images/stars.png" class="image-review">
+            <img src="assets/images/stars.png" class="image-review">
           </div>
         </div>
     </div>
@@ -207,7 +209,7 @@
         </form>
 
         <div class="form-image">
-          <img src="images/email.png">
+          <img src="assets/images/email.png">
         </div>
       </div>
 

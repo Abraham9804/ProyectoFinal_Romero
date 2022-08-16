@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto 100px;
+  grid-template-areas: "image image image" "main main main" "reviews reviews reviews" "contact contact contact" "footer footer footer";
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 10px;
+  width: 50%;
+  margin: auto auto;
+}
+
+.menu a {
+  transition: ease 1s all;
+}
+.menu a:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.carousel {
+  grid-area: image;
+}
+.carousel .carousel-image {
+  max-height: 650px;
+}
+
+.d-md-block {
+  width: -50%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+}
+
+main {
+  grid-area: main;
+  margin-bottom: 100px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.container-dollar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+
+.color-card {
+  background-color: #056dae;
+  color: #056dae;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: rgb(88, 86, 86);
+  margin: 150px auto;
+}
+
+.titulo-simulador {
+  margin-top: 100px;
+}
+
+.title {
+  color: rgb(88, 86, 86);
+}
+
+.contact-form-loan {
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.contact-form-loan input[type=text] {
+  width: 80%;
+}
+
+.field-container-form {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: #056dae;
+  vertical-align: top;
+  padding: 5px;
+}
+
+#divprestamos .card {
+  height: 180px;
+}
+
+/*# sourceMappingURL=destination.css.map */

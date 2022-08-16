@@ -1,0 +1,19 @@
+{
+  "name": "reto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abraham9804/Clase3_Romero.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abraham9804/Clase3_Romero/issues"
+  },
+  "homepage": "https://github.com/Abraham9804/Clase3_Romero#readme"
+}

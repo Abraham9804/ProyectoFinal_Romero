@@ -1,0 +1,41 @@
+.header {
+	background: rgba(0, 0, 0, 0.7);
+ 	backdrop-filter: blur(1px);
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 10px;
+	width: 50%;
+	margin: auto auto;
+}
+
+
+.menu a {
+	transition: ease 1s all;
+
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+}
+
+.carousel{
+	grid-area: image;
+
+        .carousel-image{
+            max-height: 650px;
+        }
+}
+
+.d-md-block{
+    width: -50%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+  }
+
+
+
+
+

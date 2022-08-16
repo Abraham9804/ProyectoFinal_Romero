@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+.container-grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: auto auto auto auto 100px;
+	grid-template-areas: "image image image"
+						 "main main main"
+						 "reviews reviews reviews"
+						 "contact contact contact"
+						 "footer footer footer";
+	
+}

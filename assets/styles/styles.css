@@ -124,6 +124,10 @@ main > .container{
 }
 
 
+#divprestamos .card{
+	height: 180px;
+}
+
 .container-reviews{
 	grid-area:reviews;
 	width: 100%;
@@ -153,8 +157,14 @@ main > .container{
 
 .container-reviews .container .card{
 	width: 300px;
-	height: 227px;
+	height: 235px;
+	
 	text-align: center;
+	margin:10px;
+}
+
+.container-reviews .container  .image-review{
+	vertical-align: top;
 }
 
 .divform{
@@ -269,5 +279,49 @@ footer{
 
 	.contact-form{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width:768px){
+	.container-dollar .card{
+		width: 250px;
+		height: 120px;
+		margin: 20px;
+	}
+	.contact-form-loan{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width:480px){
+	.container-dollar{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.container-dollar .card{
+		width: 250px;
+		height: 120px;
+		margin: 20px;
+	}
+
+	.contact-form-loan{
+		width: 90%;
+	}
+
+
+	.form-title{
+		padding: 10px 10px;
+		margin-top: 50px;
+	}
+
+	.divform .subcontainer{
+		margin: 10px 0px;
+	}
+}
+
+@media screen and (max-width:320px){
+	.form-title{
+		font-size: 2.5rem;
 	}
 }
