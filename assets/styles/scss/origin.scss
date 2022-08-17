@@ -1,5 +1,9 @@
 $color-principal: #056dae;
 
-@import "../grid/_grid.scss";
-@import "../header/_header.scss";
-@import "../main/_main.scss";
+@import "../grid/grid.scss";
+@import "../header/header.scss";
+@import "../main/main.scss";
+@import "../reviews/reviews";
+@import "../contact-form/contact-form.scss";
+@import "../footer/footer.scss";
+@import "../media-queryes/queryes.scss";

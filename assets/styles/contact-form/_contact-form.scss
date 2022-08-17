@@ -1,0 +1,81 @@
+.divform{
+	grid-area: contact;
+	text-align: center;
+
+    .form-title{
+        color: $color-principal;
+        font-size: bold;
+        padding: 50px 20px;
+        font-size: 3rem;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .subcontainer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 100px;
+
+        form{
+            width: 60%;
+            margin-bottom: 100px; 
+
+            input[type="email"]{
+                width: 70%;
+                padding: 10px 20px;
+                margin:10px 20px;
+            }
+
+            input[type="tel"]{
+                width: 70%;
+                padding: 10px 20px;
+                margin:10px 20px;
+            }
+
+            input[type="text"]{
+                width: 70%;
+                padding: 10px 20px;
+                margin:10px 20px;
+            }
+
+            textarea{
+                width: 70%;
+                height: 250px;
+                padding: 10px 20px;
+                margin:10px 10px;
+            }
+
+            input[type="submit"]{
+                display: block;
+                padding: 10px 30px;
+                background-color: $color-principal;
+                color:white;
+                border-radius: 10px;
+                border: none;
+                margin:10px auto;
+            }
+
+            .fa-solid{
+                font-size: 30px;
+                color:$color-principal;
+                vertical-align: top;
+                padding: 5px;
+            }
+        }
+
+        .form-image{
+            width: 40%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -206,29 +206,10 @@ main > .container{
 	padding: 5px;
 }
 
-.contact-form textarea{
-	width: 70%;
-	height: 250px;
-	padding: 10px 20px;
-	margin:10px 10px;
-}
-.form-image{
-	width: 40%;
-}
+ 
 
-.form-image img{
-	width: 100%;
-}
 
-form input[type="submit"]{
-	display: block;
-	padding: 10px 30px;
-	background-color: #056dae;
-	color:white;
-	border-radius: 10px;
-	border: none;
-	margin:10px auto;
-}
+
 
 
 footer{

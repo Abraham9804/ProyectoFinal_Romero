@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,66 +53,238 @@ main {
   grid-area: main;
   margin-bottom: 100px;
 }
-
-.container {
+main .container {
   margin-top: 100px;
 }
-
-.container-dollar {
+main .container .container-dollar {
   display: flex;
   justify-content: space-between;
 }
-
-.card {
+main .container .container-dollar .card {
   width: 300px;
   height: 150px;
   text-align: center;
 }
-
-.color-card {
+main .container .container-dollar .color-card {
   background-color: #056dae;
   color: #056dae;
 }
-
-.separator {
+main .container .separator {
   width: 100%;
   height: 1px;
   background: rgb(88, 86, 86);
   margin: 150px auto;
 }
-
-.titulo-simulador {
+main .container .titulo-simulador {
   margin-top: 100px;
 }
-
-.title {
+main .container .titulo-simulador .title {
   color: rgb(88, 86, 86);
 }
-
-.contact-form-loan {
+main .container .contact-form-loan {
   width: 60%;
   margin-bottom: 100px;
 }
-
-.contact-form-loan input[type=text] {
-  width: 80%;
-}
-
-.field-container-form {
+main .container .contact-form-loan .field-container-form {
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
 }
-
-.fa-solid {
+main .container .contact-form-loan .field-container-form input[type=text] {
+  width: 80%;
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+main .container .contact-form-loan .field-container-form .fa-solid {
   font-size: 30px;
   color: #056dae;
   vertical-align: top;
   padding: 5px;
 }
-
-#divprestamos .card {
+main .container .contact-form-loan input[type=submit] {
+  display: block;
+  padding: 10px 30px;
+  background-color: #056dae;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto;
+}
+main #divprestamos .card {
   height: 180px;
+}
+
+.container-reviews {
+  grid-area: reviews;
+  width: 100%;
+  min-height: 500px;
+  background-color: #056dae;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.container-reviews .container {
+  display: flex;
+  justify-content: space-between;
+}
+.container-reviews .container .image-review {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+}
+.container-reviews .container .card {
+  width: 300px;
+  height: 235px;
+  text-align: center;
+  margin: 10px;
+}
+.container-reviews .container .image-review {
+  vertical-align: top;
+}
+.container-reviews .title-reviews {
+  font-weight: bold;
+  color: white;
+  padding: 50px 20px;
+}
+
+.divform {
+  grid-area: contact;
+  text-align: center;
+}
+.divform .form-title {
+  color: #056dae;
+  font-size: bold;
+  padding: 50px 20px;
+  font-size: 3rem;
+  margin-top: 100px;
+  text-align: center;
+}
+.divform .subcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+}
+.divform .subcontainer form {
+  width: 60%;
+  margin-bottom: 100px;
+}
+.divform .subcontainer form input[type=email] {
+  width: 70%;
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+.divform .subcontainer form input[type=tel] {
+  width: 70%;
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+.divform .subcontainer form input[type=text] {
+  width: 70%;
+  padding: 10px 20px;
+  margin: 10px 20px;
+}
+.divform .subcontainer form textarea {
+  width: 70%;
+  height: 250px;
+  padding: 10px 20px;
+  margin: 10px 10px;
+}
+.divform .subcontainer form input[type=submit] {
+  display: block;
+  padding: 10px 30px;
+  background-color: #056dae;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto;
+}
+.divform .subcontainer form .fa-solid {
+  font-size: 30px;
+  color: #056dae;
+  vertical-align: top;
+  padding: 5px;
+}
+.divform .subcontainer .form-image {
+  width: 40%;
+}
+.divform .subcontainer .form-image img {
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  background: #056dae;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  main .container {
+    width: 100%;
+  }
+  main .container .container-dollar {
+    width: 100%;
+  }
+  main .container .container-dollar .card {
+    width: 30%;
+    height: 150px;
+    text-align: center;
+  }
+  .container-dollar {
+    width: 100%;
+  }
+  .container-reviews .container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 10px;
+  }
+  .container-reviews .container .card {
+    height: 230px;
+    margin: 30px 0px;
+  }
+  .form-image {
+    display: none;
+  }
+  .divform .subcontainer .contact-form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .container .container-dollar .card {
+    width: 250px;
+    height: 120px;
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .container .container-dollar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main .container .container-dollar .card {
+    width: 250px;
+    height: 120px;
+    margin: 20px;
+  }
+  .contact-form-loan {
+    width: 90%;
+  }
+  .form-title {
+    padding: 10px 10px;
+    margin-top: 50px;
+  }
+  .divform .subcontainer {
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .divform .form-title {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=destination.css.map */
