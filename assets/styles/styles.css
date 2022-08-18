@@ -209,7 +209,15 @@ main > .container{
  
 
 
-
+form input[type="submit"]{
+	display: block;
+	padding: 10px 30px;
+	background-color: #056dae;
+	color:white;
+	border-radius: 10px;
+	border: none;
+	margin:10px auto;
+}
 
 
 footer{

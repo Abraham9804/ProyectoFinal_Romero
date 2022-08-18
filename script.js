@@ -1,4 +1,4 @@
-//DEFINICION DE VARIABLES
+//DEFINICION DE VARIABLES Y ARREGLOS
 let cantidad
 let meses
 let total
@@ -8,7 +8,7 @@ let insertar
 let prestamos=[]
 
 
-//DEFINICION DE CLASE
+//DEFINICION DE CLASES
 class Prestamo{
     constructor(cantidad, meses, total, pagos){
         this.cantidad=cantidad
@@ -25,7 +25,6 @@ fetch("https://criptoya.com/api/dolar")
 .then(response => response.json())
 .then(({oficial, solidario, blue}) => {		
     divDollar.innerHTML=`
-    
     <div class="card text-white color-card mb-3" >
         <div class="card-header">Oficial </div>
         <div class="card-body">
@@ -99,7 +98,7 @@ if(localStorage.getItem('storagePrestamos')){
 
 //ACCESO A ELEMENTOS DEL COTIZADOR MEDIANTE DOM
 const formulario = document.getElementById('idForm') 
-const botonTareas = document.getElementById('btn-tareas')
+const botonHistorial = document.getElementById('btn-historial')
 const divPrestamos = document.getElementById('div-prestamos')
 
 
@@ -111,6 +110,7 @@ formulario.addEventListener('submit',(event) =>{
     
     totales() //SE LLAMA LA FUNCION PARA CALCULAR PAGOS, PLAZOS E INTERES DEL PRESTAMO
 
+    //SE VERIFICAN LOS DATOS INGRESADOS
     if((cantidad >=1000 && cantidad <=50000) && (meses >=1 && meses <=12)){
         const prestamo1 = new Prestamo(cantidad, meses, total, pagos)
         prestamos.push(prestamo1)
@@ -145,7 +145,7 @@ function totales(){
 
 
 
-//FUNCION PARA VERIFICAR QUE LA INFORMACION INGRESADA AL SIMULADOR ES CORRECTA
+//FUNCION PARA VERIFICAR LOS DATOS PARA MOSTRAR UN RESULTADO AL USUARIO
 function insertarDatos(){
     if((meses >=1 && meses <= 12) && (cantidad >= 1000 && cantidad <=50000)){
         prestamos.forEach(dato => {
@@ -165,7 +165,7 @@ function insertarDatos(){
 
 
 //EVENTO PARA MOSTRAR LAS COTIZACIONES GUARDADAS EN LOCALSTORAGE
-botonTareas.addEventListener('click', () =>{
+botonHistorial.addEventListener('click', () =>{
     let prestamoStorage = JSON.parse(localStorage.getItem('storagePrestamos'))
     divprestamos.innerHTML=""
     prestamoStorage.forEach((dato, indice) => {

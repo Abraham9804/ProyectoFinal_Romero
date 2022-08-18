@@ -1,3 +1,4 @@
+//MEDIA QUERYES
 @media screen and (max-width:1024px){
 	main {
 		.container{
@@ -51,9 +52,24 @@
 @media screen and (max-width:768px){
 	main {
 		.container{
+			.container{
+				.contact-form-loan{
+					width: 90%;
+				}
+			}
+		}
+	} 
+
+	main {
+		.container{
+			width: 100%;
 			.container-dollar {
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+
 				.card{
-				width: 250px;
+				width: 300px;
 				height: 120px;
 				margin: 20px;
 			}
@@ -79,9 +95,7 @@
 	}
 }
 
-	.contact-form-loan{
-		width: 90%;
-	}
+	
 
 
 	.form-title{
