@@ -1,3 +1,4 @@
+/*ESTRUCTURA GRID*/
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body {
   grid-template-areas: "image image image" "main main main" "reviews reviews reviews" "contact contact contact" "footer footer footer";
 }
 
+/*HEADER*/
 .header {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1px);
@@ -49,6 +51,7 @@ body {
   backdrop-filter: blur(1px);
 }
 
+/*MAIN*/
 main {
   grid-area: main;
   margin-bottom: 100px;
@@ -114,6 +117,7 @@ main #divprestamos .card {
   height: 180px;
 }
 
+/*REVIEWS*/
 .container-reviews {
   grid-area: reviews;
   width: 100%;
@@ -146,6 +150,7 @@ main #divprestamos .card {
   padding: 50px 20px;
 }
 
+/*FORMULARIO DE CONTACTO*/
 .divform {
   grid-area: contact;
   text-align: center;
@@ -211,6 +216,7 @@ main #divprestamos .card {
   width: 100%;
 }
 
+/*FOOTER*/
 footer {
   grid-area: footer;
   background: #056dae;
@@ -221,6 +227,7 @@ footer {
   align-items: center;
 }
 
+/*MEDIA QUERYES*/
 @media screen and (max-width: 1024px) {
   main .container {
     width: 100%;
